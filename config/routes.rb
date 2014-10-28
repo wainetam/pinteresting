@@ -4,7 +4,7 @@ Pinteresting::Application.routes.draw do
   devise_for :users
   # get "pages/home"
 
-  root "pages#home" # home action send to pages_controller
+  root "pins#index" # home action send to pages_controller
 
   get "about" => "pages#about" # about action sent to pages_controller; also creates about_path variable
 
